@@ -17,8 +17,8 @@ A 16-page practical handbook and reproducible support-ticket prompt evaluation p
 Install Node.js 22 or newer. No package installation or external dependencies are needed.
 
 ~~~sh
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone https://github.com/suryanshitomar/Prompt-Engineering-Guide.git
+cd Prompt-Engineering-Guide
 npm test
 npm run demo
 ~~~
@@ -94,7 +94,7 @@ The lab extends the book into executable checks. Its versioned policy explicitly
 
 Write up your own results with [the case-study template](docs/case-study-template.md). Include your decisions, sanitized raw evidence, failures and limitations. Add your name, repository URL and screenshots when ready.
 
-[Publishing instructions](docs/publishing.md) explain the future GitHub push. No remote repository has been created or pushed during setup.
+[Publishing instructions](docs/publishing.md) explain the future GitHub push. GitHub repository: https://github.com/suryanshitomar/Prompt-Engineering-Guide
 
 ## Data and limitations
 
