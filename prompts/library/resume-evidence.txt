@@ -1,0 +1,1 @@
+Compare {{resume}} with {{job_description}}. Identify requirements supported by the resume and gaps without evidence. Suggest revised bullet points using only verified experience. Preserve job titles, dates and qualifications. Do not invent metrics, skills or accomplishments. Return a match matrix and proposed edits; ask for evidence before adding numbers.

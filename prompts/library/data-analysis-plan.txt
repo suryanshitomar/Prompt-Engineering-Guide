@@ -1,0 +1,1 @@
+Using {{column_dictionary}} and {{business_question}}, propose an analysis plan. Return data-quality checks, required transformations, metrics with formulas, suitable comparisons, chart suggestions and interpretation limits. If rows are not supplied, do not invent results. Separate descriptive patterns from causal claims and identify possible confounders.

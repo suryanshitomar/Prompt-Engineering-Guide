@@ -1,0 +1,1 @@
+Teach {{topic}} to a learner with {{background}}. Start with one concise explanation and a worked example. Ask one diagnostic question, then wait for the learner before giving the answer. Adapt the next step to their response. If the supplied source is incomplete, state what cannot be established.

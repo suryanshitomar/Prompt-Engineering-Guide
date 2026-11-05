@@ -1,0 +1,112 @@
+[
+  {
+    "id": "D01",
+    "response": {
+      "category": "other",
+      "needs_review": true,
+      "missing_fields": [
+        "order_id",
+        "days_since_delivery"
+      ],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D02",
+    "response": {
+      "category": "billing",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D03",
+    "response": {
+      "category": "access",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Please use https://example.com/reset. If the issue persists, staff can review it."
+    }
+  },
+  {
+    "id": "D04",
+    "response": {
+      "category": "access",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Please use https://example.com/reset. If the issue persists, staff can review it."
+    }
+  },
+  {
+    "id": "D05",
+    "response": {
+      "category": "other",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D06",
+    "response": "not JSON"
+  },
+  {
+    "id": "D07",
+    "response": {
+      "category": "other",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D08",
+    "response": {
+      "category": "access",
+      "needs_review": false,
+      "missing_fields": [],
+      "reply": "Please use https://example.com/reset. If the issue persists, staff can review it."
+    }
+  },
+  {
+    "id": "D09",
+    "response": {
+      "category": "billing",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D10",
+    "response": {
+      "category": "other",
+      "needs_review": true,
+      "missing_fields": [],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D11",
+    "response": {
+      "category": "billing",
+      "needs_review": true,
+      "missing_fields": [
+        "days_since_delivery"
+      ],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  },
+  {
+    "id": "D12",
+    "response": {
+      "category": "billing",
+      "needs_review": true,
+      "missing_fields": [
+        "order_id"
+      ],
+      "reply": "Staff can review this request. Please provide any missing order ID and days since delivery."
+    }
+  }
+]

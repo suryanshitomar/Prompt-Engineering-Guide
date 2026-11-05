@@ -1,0 +1,23 @@
+'use strict';
+const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');
+const {validate,evaluate}=require('../src/evaluate.cjs');const {main}=require('../src/cli.cjs');
+const cases=JSON.parse(fs.readFileSync(path.join(__dirname,'../data/tickets.json'),'utf8'));
+const c=cases[0], good={...c.expected,reply:'Please share your order ID and days since delivery for staff review.'};let count=0;
+function test(name,fn){fn();count++;console.log('PASS '+name)}
+test('dataset has 20 unique cases and correct split',()=>{assert.equal(cases.length,20);assert.equal(new Set(cases.map(c=>c.id)).size,20);assert.equal(cases.filter(c=>c.split==='development').length,12)});
+test('valid response accepted',()=>assert.deepEqual(validate(good),[]));
+test('unknown key rejected',()=>assert.ok(validate({...good,extra:1}).length));
+test('wrong type rejected',()=>assert.ok(validate({...good,needs_review:'true'}).length));
+test('unknown category rejected',()=>assert.ok(validate({...good,category:'refund'}).length));
+test('duplicate missing fields rejected',()=>assert.ok(validate({...good,missing_fields:['order_id','order_id']}).length));
+test('null and arrays rejected',()=>{assert.ok(validate(null).length);assert.ok(validate([]).length)});
+test('malformed model JSON counted as failure',()=>assert.equal(evaluate([c],[{id:c.id,response:'{'}]).totals.contract,0));
+test('absent responses remain in denominator',()=>{const r=evaluate([c],[]);assert.equal(r.totals.cases,1);assert.equal(r.totals.pass,0)});
+test('duplicate IDs rejected',()=>assert.throws(()=>evaluate([c],[{id:c.id},{id:c.id}]),/Duplicate/));
+test('wrong split or unknown IDs rejected',()=>assert.throws(()=>evaluate([c],[{id:'H01'}]),/Unknown/));
+test('missing fields compared independent of order',()=>assert.equal(evaluate([c],[{id:c.id,response:{...good,missing_fields:[...good.missing_fields].reverse()}}]).totals.pass,1));
+test('overlong reply fails length check',()=>assert.equal(evaluate([c],[{id:c.id,response:{...good,reply:Array(91).fill('word').join(' ')}}]).totals.length,0));
+test('incorrect review flag fails overall result',()=>assert.equal(evaluate([c],[{id:c.id,response:{...good,needs_review:false}}]).totals.pass,0));
+test('CLI prepares only chosen split and preserves literal ticket text',()=>{main(['prepare','--split','development','--prompt','revised']);const rows=fs.readFileSync(path.join(__dirname,'../results/local/requests.jsonl'),'utf8').trim().split('\n').map(JSON.parse);assert.equal(rows.length,12);assert.ok(rows.every(r=>r.id.startsWith('D')));assert.ok(rows[0].prompt.includes(c.ticket));assert.ok(!rows[0].prompt.includes('{{contract}}'))});
+test('CLI rejects unknown flags',()=>assert.throws(()=>main(['demo','--typo','x']),/Unknown option/));
+console.log(count+' tests passed.');

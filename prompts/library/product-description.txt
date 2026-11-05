@@ -1,0 +1,1 @@
+Write a {{word_limit}} word product description for {{audience}} using only {{product_specifications}}. Tone: {{tone}}. Include supplied materials, dimensions, use cases and care details when present. Do not invent certifications, benefits, availability or performance. Return the description and a separate list of missing facts that could improve it.

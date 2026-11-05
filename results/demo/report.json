@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "mode": "ILLUSTRATIVE FIXTURES - no model called",
+    "split": "development",
+    "model": "none",
+    "prompt": "none"
+  },
+  "totals": {
+    "cases": 12,
+    "responses": 12,
+    "contract": 11,
+    "routing": 10,
+    "review": 10,
+    "fields": 11,
+    "length": 11,
+    "pass": 9
+  },
+  "rows": [
+    {
+      "id": "D01",
+      "contract": true,
+      "routing": false,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": false,
+      "errors": []
+    },
+    {
+      "id": "D02",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D03",
+      "contract": true,
+      "routing": true,
+      "review": false,
+      "fields": true,
+      "length": true,
+      "pass": false,
+      "errors": []
+    },
+    {
+      "id": "D04",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D05",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D06",
+      "contract": false,
+      "routing": false,
+      "review": false,
+      "fields": false,
+      "length": false,
+      "pass": false,
+      "errors": [
+        "Invalid JSON"
+      ]
+    },
+    {
+      "id": "D07",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D08",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D09",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D10",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D11",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    },
+    {
+      "id": "D12",
+      "contract": true,
+      "routing": true,
+      "review": true,
+      "fields": true,
+      "length": true,
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "notice": "Automated checks do not assess semantic policy compliance or reply usefulness. Human review required."
+}

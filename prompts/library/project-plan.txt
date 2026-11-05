@@ -1,0 +1,1 @@
+Create a plan for {{deliverable}} within {{deadline_and_capacity}}. Known constraints: {{constraints}}. Return milestones, tasks, dependencies, proposed owners, acceptance criteria and risks. Label estimates and proposed assignments. Flag impossible assumptions instead of silently extending the deadline.

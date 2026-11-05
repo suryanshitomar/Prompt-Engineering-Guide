@@ -1,0 +1,1 @@
+Review this deck outline: {{outline}}. Audience: {{audience}}. Goal: {{goal}}. Identify unclear messages, repetition, unsupported claims, inaccessible visual choices and timing risks. Reference slide numbers from the input. Return prioritized changes and revised wording for the three weakest slides. Do not fabricate missing financial or research data.

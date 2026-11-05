@@ -1,0 +1,1 @@
+Create a {{weeks}} week content plan for {{brand}} targeting {{audience}} on {{channels}}. Use these approved facts and constraints: {{brief}}. Return date or relative day, topic, audience need, format, draft hook, call to action and production effort. Respect {{posting_capacity}}. Label creative ideas as proposals and avoid unsupported product claims or predicted performance.

@@ -1,0 +1,7 @@
+Route the ticket as billing, access, or other and draft a helpful reply under 90 words using the policy. Return only JSON matching the output contract.
+POLICY
+{{policy}}
+OUTPUT CONTRACT
+{{contract}}
+TICKET
+{{ticket}}

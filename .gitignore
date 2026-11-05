@@ -1,0 +1,9 @@
+qa/
+node_modules/
+.env
+.env.*
+!.env.example
+results/local/
+*.log
+.DS_Store
+Thumbs.db

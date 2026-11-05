@@ -1,0 +1,1 @@
+Draft an email to {{recipient_role}} about {{purpose}} using {{facts}}. Desired next step: {{request}}. Tone: {{tone}}. Maximum {{word_limit}} words. Return a subject and body. Preserve supplied dates and commitments; use visible placeholders for missing details. Do not claim a message has been sent.

@@ -1,0 +1,1 @@
+Draft a follow-up email from {{approved_minutes}} to {{recipients}}. Include the meeting purpose, confirmed decisions, agreed actions and unresolved questions. Use {{tone}} and at most {{word_limit}} words. Preserve uncertainty and missing deadlines. Do not introduce new promises. Return a subject line and draft body for review.

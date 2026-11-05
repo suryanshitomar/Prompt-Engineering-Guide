@@ -1,0 +1,16 @@
+{
+  "name": "prompt-engineering-portfolio-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reproducible prompt evaluation lab and practical e-book",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/run.cjs",
+    "demo": "node src/cli.cjs demo",
+    "prepare": "node src/cli.cjs prepare",
+    "evaluate": "node src/cli.cjs evaluate"
+  },
+  "license": "UNLICENSED"
+}

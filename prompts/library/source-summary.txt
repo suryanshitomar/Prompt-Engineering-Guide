@@ -1,0 +1,1 @@
+Summarize {{source_with_ids}} for {{audience}} in at most {{word_limit}} words. Return the central point, supporting facts, limitations and open questions. Preserve numerical units and uncertainty. Attach source IDs to factual claims. Do not add background facts absent from the source.

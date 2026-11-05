@@ -1,0 +1,1 @@
+Review the code in {{code}} for {{requirements}}. Consider correctness, boundary cases, security and maintainability. For each finding give severity, code location, trigger and a concrete fix. Distinguish confirmed defects from hypotheses. Suggest focused tests. Do not claim the code was executed unless execution occurred.
